@@ -23,6 +23,18 @@ _Image Found [Here](https://i.pinimg.com/originals/d3/cf/6d/d3cf6d54391b9547327b
 - [ ] Host Website (Heroku [or] Digital Ocean) T.B.D.
 - [ ] Seek Investment assistance for further Development!
 
+## Development Logs ##
+_01/01/2021 @ 16:20_
+* Create Basic Landing Pages
+* Integrated Bootstrap
+* Converted Landing Pages to Dynamic Pages
+* Properly Structured Project Routes for Landing Pages
+
+_01/01/2021 @ 16:50_
+* Setup User Registration
+* Setup User Login
+* Created User Page
+
 ## Project Resources ##
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)
 ![Rails](https://img.shields.io/badge/rails%20-%23CC0000.svg?&style=for-the-badge&logo=ruby-on-rails&logoColor=white)
@@ -40,7 +52,7 @@ _Image Found [Here](https://i.pinimg.com/originals/d3/cf/6d/d3cf6d54391b9547327b
 ![GitHub:](https://github.com/B10-H4ck3r)  
 
 ## Donation Goals & Donate ##
-_Please feel free to donate in order to help continue building &amp; developing this site!_
+_Please feel free to donate in order to help continue building &amp; developing this site!_  
 [PayPal Donation](https://paypal.me/b10h4ck3r)  
 [CashApp Donation](https://cash.app/$B10H4ck3r)  
 [Bitcoin Donation](https://blockchair.com/bitcoin/address/bc1qrua8yzvkv2eg9njx5d9zhvdzymd8nvgntckh5j)  
