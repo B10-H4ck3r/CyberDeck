@@ -1,8 +1,44 @@
 <% provide(:title, "Donate") %>
-<div class="center jumbotron">
-  <h1>
-    Please donate to help raise money for the development of this website.<br/>
-    <br/>
-    Plus each donation does in fact help keep the developer motivated!
+<div class="center jumbotron dnt">
+  <h1 class="dnt_hdr">
+    Donate to Cyber Deck
   </h1>
+  <p class="dnt_txt">
+    Your contributions to Cyber Deck are most appreciated. And that is an understatement!<br/>
+    The developer is constantly working hard to ensure the safety and anonymity of a new
+    online social media experience. And while this is just one of the tasks he is working on,
+    it is most certianly his most favorite one. <br/>
+    <br/>
+    Your donation does more than just give the developer money and use that as a tax right off.
+    But rather instead, you are encouraging a developer to do more, learn more, go further, and
+    bring him hope of a better social media experience!<br/>
+    <br/>
+    While there are several methods you can use to donate to your desired charity, we have setup
+    the following methods to accept donations at this time. Please note, the donation options
+    may change in time, and we may include more methods to donate as well.<br/>
+    <br/>
+    <table border="0" align="center">
+      <tr>
+        <td>
+          <%= image_tag('paypal.png', class: "dnt_img") %>
+        </td>
+        <td>
+          <%= image_tag('cashapp1.png', class: "dnt_img") %>
+        </td>
+        <td>
+          <%= image_tag('bitcoin1.png', class: "dnt_img") %>
+        </td>
+      </tr>
+      <tr>
+        <td><br/>
+          <%= link_to "PayPal", "paypal.me/b10h4ck3r", target: "_blank", class: "dnt_lnk" %>
+        </td>
+        <td><br/>
+          <%= link_to "CashApp", "https://cash.app/$B10H4ck3r", target: "_blank", class: "dnt_lnk" %>
+        </td>
+        <td><br/>
+          <%= link_to "Bitcoin", "https://blockchair.com/bitcoin/address/bc1qrua8yzvkv2eg9njx5d9zhvdzymd8nvgntckh5j", target: "_blank", class: "dnt_lnk" %>
+        </td>
+      </tr>
+    </table>
 </div>

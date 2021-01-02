@@ -25,18 +25,24 @@ _Image Found [Here](https://i.pinimg.com/originals/d3/cf/6d/d3cf6d54391b9547327b
 
 ## Development Logs ##
 _01/01/2021 @ 16:20_
-* Create Basic Landing Pages
-* Integrated Bootstrap
-* Converted Landing Pages to Dynamic Pages
-* Properly Structured Project Routes for Landing Pages
+* Create Basic Landing Pages  
+* Integrated Bootstrap  
+* Converted Landing Pages to Dynamic Pages  
+* Properly Structured Project Routes for Landing Pages  
 
 _01/02/2021 @ 13:20_
-* Setup Heroku Server for Development
-* Designed the General Theme for the Landing Pages
+* Setup Heroku Server for Development  
+* Designed the General Theme for the Landing Pages  
 
 _01/02/2021 @ 14:40_
-* Setup Google Tracking
-* Setup Google Ads
+* Added SSL to Heroku Deployment  
+* Setup Google Tracking  
+* Setup Google Ads  
+
+_01/02/2021 @ 15:40_
+* Finished All Landing Pages
+* Added Donation Options
+* Finished GUI Theme
 
 ## Project Resources ##
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)

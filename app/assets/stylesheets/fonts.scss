@@ -25,6 +25,76 @@ font-family: 'Righteous', cursive;
 font-family: 'Source Code Pro', monospace;
 */
 
+.dnt_lnk
+{
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size: 30px;
+  color: #000;
+  text-shadow: 10px 10px 20px #0F0;
+  margin-top: 20px;
+  cursor: crosshair;
+}
+
+.dev_log_hdr
+{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-shadow: 8px 8px 10px #00F;
+  color: #000;
+}
+
+.dev_log_txt
+{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  text-shadow: 8px 8px 10px #000;
+  text-align: left;
+  display: inline-block;
+}
+
+.dev_txt
+{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 15px;
+}
+
+.dev_hdr
+{
+  font-family: 'Audiowide', cursive;
+  font-size: 20px;
+  color: #000;
+  text-shadow: 10px 10px 15px gray;
+}
+
+.cnt_txt
+{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 20px;
+  color: #000;
+  text-shadow: 5px 5px 10px #000;
+}
+
+.fa_ico
+{
+  font-size: 30px;
+  text-shadow: 10px 10px 15px #0F0;
+  color: #000;
+  margin-right: 15px;
+  cursor: crosshair;
+}
+.fa_ico:hover
+{
+  font-size: 35px;
+}
+
+.cnt_hdr
+{
+  font-family: 'Audiowide', cursive;
+  font-size: 20px;
+  color: #000;
+  text-shadow: 10px 10px 15px gray;
+}
+
 .abt_hdr
 {
   font-family: 'Orbitron', sans-serif;
