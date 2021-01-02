@@ -30,10 +30,9 @@ _01/01/2021 @ 16:20_
 * Converted Landing Pages to Dynamic Pages
 * Properly Structured Project Routes for Landing Pages
 
-_01/01/2021 @ 16:50_
-* Setup User Registration
-* Setup User Login
-* Created User Page
+_01/02/2021 @ 13:20_
+* Setup Heroku Server for Development
+* Designed the General Theme for the Landing Pages
 
 ## Project Resources ##
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)
@@ -41,9 +40,8 @@ _01/01/2021 @ 16:50_
 ![GitHub](https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?&style=for-the-badge&logo=postgresql&logoColor=white)  
 ![Bootstrap](https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white)
-![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%230167ff.svg?&style=for-the-badge&logo=digitalOcean&logoColor=white)
-![NGINX](https://img.shields.io/badge/nginx%20-%23009639.svg?&style=for-the-badge&logo=nginx&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS%20-%23FF9900.svg?&style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Heroku](https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white)
 
 ## Follow Me: ##
 ![Facebook:](https://www.facebook.com/b10h4ck3r)  

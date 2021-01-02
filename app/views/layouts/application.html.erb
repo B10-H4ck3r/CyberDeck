@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all',
-                                           'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Stencil+Text&family=Black+Ops+One&family=Cinzel&family=Cinzel+Decorative&family=Goldman&family=Merriweather:ital@1&family=Orbitron&family=Playfair+Display+SC&family=Righteous&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -15,17 +15,23 @@
     <![endif]-->
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
+    <header class="navbar navbar-fixed-top navbar-inverse" style="background-color: gray">
       <div class="container">
         <%= link_to "CyberDeck", root_path, id: "logo" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   root_path %></li>
-            <li><%= link_to "About",   about_path %></li>
-            <li><%= link_to "Connect", connect_path %></li>
-            <li><%= link_to "Dev Logs", devlogs_path %></li>
-            <li><%= link_to "Donate",   donate_path %></li>
-            <li><%= link_to "Log in", '#' %></li>
+            <li id="mnu_itm"><%= link_to "Home",   root_path %></li>
+            <li class="dropdown" id="mnu_itm">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Discover <b class="caret"></b>
+              <ul class="dropdown-menu" style="background-color: darkgray;">
+                <li id="mnu_itm_drp"><%= link_to "About", about_path %></li>
+                <li id="mnu_itm_drp"><%= link_to "Connect", connect_path %></li>
+                <li id="mnu_itm_drp"><%= link_to "Dev Logs", devlogs_path %></li>
+                <li id="mnu_itm_drp"><%= link_to "Donate",   donate_path %></li>
+              </ul>
+            </li>
+            <li id="mnu_itm"><%= link_to "Log in", '#' %></li>
           </ul>
         </nav>
       </div>

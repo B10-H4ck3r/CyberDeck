@@ -1,0 +1,83 @@
+/*
+
+Import Google Fonts;
+
+font-family: 'Audiowide', cursive;
+
+font-family: 'Big Shoulders Stencil Text', cursive;
+
+font-family: 'Black Ops One', cursive;
+
+font-family: 'Cinzel', serif;
+
+font-family: 'Cinzel Decorative', cursive;
+
+font-family: 'Goldman', cursive;
+
+font-family: 'Merriweather', serif;
+
+font-family: 'Orbitron', sans-serif;
+
+font-family: 'Playfair Display SC', serif;
+
+font-family: 'Righteous', cursive;
+
+font-family: 'Source Code Pro', monospace;
+*/
+
+.abt_hdr
+{
+  font-family: 'Orbitron', sans-serif;
+  color: #000;
+  text-shadow: 10px 10px 15px gray;
+  font-size: 20px;
+}
+
+.wlcm_hdr
+{
+  font-family: 'Audiowide', cursive;
+  font-size: 30px;
+  text-shadow: 10px 10px 15px #000;
+}
+
+.wlcm_txt
+{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 20px;
+  text-shadow: 10px 10px 20px #C0C0C0;
+  color: #000;
+}
+
+#mnu_itm a
+{
+  font-family: 'Source Code Pro', monospace;
+  text-shadow: 10px 10px 15px #000;
+  color: #FFF;
+  font-size: 25px;
+}
+
+#mnu_itm_drp a
+{
+  font-family: 'Source Code Pro', monospace;
+  text-shadow: 10px 10px 15px #000;
+  color: #0F0;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  font-family: 'Audiowide', cursive;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Black Ops One', cursive;
+  text-shadow: 10px 10px 15px #000;
+}
