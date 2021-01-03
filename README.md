@@ -13,14 +13,16 @@ _Image Found [Here](https://i.pinimg.com/originals/d3/cf/6d/d3cf6d54391b9547327b
 - [x] Initiate the Project Framework
 - [x] Create Basic Landing Pages
 - [x] Integrate Bootstrap for Styling
+- [x] Host Website Heroku
 - [x] Create a basic Theme
-- [ ] Create User Registration/Login Functions
+- [x] Create User Registration
+- [ ] Create Login Functions
 - [ ] Setup User Profile Image Upload
 - [ ] Setup User Banner Image Upload
+- [ ] Setup User Profile GUI Theme
 - [ ] Configure User Edit Page for new fields
 - [ ] Develop Post Controller
 - [ ] Integrate AWS for Storage
-- [x] Host Website Heroku
 
 ## Development Logs ##
 _01/01/2021 @ 16:20_
