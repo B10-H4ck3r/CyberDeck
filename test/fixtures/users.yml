@@ -1,1 +1,13 @@
-# EMPTY FILE! #
+aubrey:
+  fname: Dr. Aubrey
+  lname: Love II
+  uname: B10 H4ck3r
+  bio: Hacker, Coder, Nerd, Father, Husband
+  tel: 2542213846
+  email: b10-h4ck3r@protonmail.com
+  job_title: Programmer
+  job_comp: B10 H4z4rd Studios
+  job_bio: Research and Develop new software technologies
+  clg_degree: Doctor of Computer Science
+  clg_name: Ashley University
+  password_digest: <%= User.digest('password') %>

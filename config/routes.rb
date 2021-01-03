@@ -10,7 +10,11 @@ Rails.application.routes.draw do
   get 'devlogs',      to: 'static_pages#devlogs'
 
   # Set User Directories #
-  get 'signup',       to: 'users#new'
+  get    'signup',   to: 'users#new'
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
+
 
   # Set Project Resources #
   resources :users

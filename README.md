@@ -16,7 +16,7 @@ _Image Found [Here](https://i.pinimg.com/originals/d3/cf/6d/d3cf6d54391b9547327b
 - [x] Host Website Heroku
 - [x] Create a basic Theme
 - [x] Create User Registration
-- [ ] Create Login Functions
+- [x] Create Login Functions
 - [ ] Setup User Profile Image Upload
 - [ ] Setup User Banner Image Upload
 - [ ] Setup User Profile GUI Theme
@@ -47,6 +47,9 @@ _01/02/2021 @ 15:40_
 
 _01/03/2021 @ 12:30_
 * Created User Registration
+
+_01/03/2021 @ 13:00_
+* Create Login Process
 
 ## Project Resources ##
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/7bed33201a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Stencil+Text&family=Black+Ops+One&family=Cinzel&family=Cinzel+Decorative&family=Goldman&family=Merriweather:ital@1&family=Orbitron&family=Playfair+Display+SC&family=Righteous&family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -41,7 +42,25 @@
                 <li id="mnu_itm_drp"><%= link_to "Donate",   donate_path %></li>
               </ul>
             </li>
-            <li id="mnu_itm"><%= link_to "Log in", '#' %></li>
+            <% if logged_in? %>
+              <li class="dropdown" id="mnu_itm">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Account <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" style="background-color: darkgray;">
+                  <li id="mnu_itm_drp"><%= link_to "My Profile", current_user %></li>
+                  <li id="mnu_itm_drp"><%= link_to "Edit Profile", '#' %></li>
+                  <li class="divider"></li>
+                  <li id="mnu_itm_drp">
+                    <%= link_to "Log out", logout_path, method: :delete %>
+                  </li>
+                  <li class="divider"></li>
+                  <li id="mnu_itm_drp"><%= link_to "Users", '#' %></li>
+                </ul>
+              </li>
+            <% else %>
+              <li id="mnu_itm"><%= link_to "Log in", login_path %></li>
+            <% end %>
           </ul>
         </nav>
       </div>
