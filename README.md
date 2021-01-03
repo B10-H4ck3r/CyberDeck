@@ -51,6 +51,13 @@ _01/03/2021 @ 12:30_
 _01/03/2021 @ 13:00_
 * Create Login Process
 
+_01/03/2021 @ 14:50_
+* Edit Profile Page Created
+* Show All Users
+* Created Admin Attribute
+* Included Pagination
+* Allowed Deletion of Users 
+
 ## Project Resources ##
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)
 ![Rails](https://img.shields.io/badge/rails%20-%23CC0000.svg?&style=for-the-badge&logo=ruby-on-rails&logoColor=white)

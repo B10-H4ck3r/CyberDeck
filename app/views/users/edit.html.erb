@@ -1,0 +1,53 @@
+<% provide(:title, "Edit Profile") %>
+<h1 class="edt_hdr">
+  Edit Your Profile
+</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(model: @user, local: true) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label "First Name:", class: 'frm_txt' %>
+      <%= f.text_field :fname, class: 'form-control frm_inp', placeholder: 'Bio' %>
+
+      <%= f.label "Last Name:", class: 'frm_txt' %>
+      <%= f.text_field :lname, class: 'form-control frm_inp', placeholder: 'Hacker' %>
+
+      <%= f.label "Username:", class: 'frm_txt" %>
+      <%= f.text_field :uname, class: 'form-control frm_inp', placeholder: 'B10 H4ck3r' %>
+
+      <%= f.label "Telephone:", class: 'frm_txt' %>
+      <%= f.telephone_field :tel, class: 'form-control frm_inp', placeholder: '254-555-0505' %>
+
+      <%= f.label "Email:", class: 'frm_txt' %>
+      <%= f.email_field :email, class: 'form-control frm_inp', placeholder: 'myemail@protonmail.com' %>
+
+      <%= f.label "Your Bio:", class: 'frm_txt' %>
+      <%= f.text_field :bio, class: 'form-control frm_inp', placeholder: 'Who am I?' %>
+
+      <%= f.label "Your Job Title:", class: 'frm_txt' %>
+      <%= f.text_field :job_title, class: 'form-control frm_inp', placeholder: 'Lead Programmer' %>
+
+      <%= f.label "Your Duties:", class: 'frm_txt' %>
+      <%= f.text_field :job_bio, class: 'form-control frm_inp', placeholder: 'What I do here is...'
+
+      <%= f.label "Company Name:", class: 'frm_txt' %>
+      <%= f.text_field :job_comp, class: 'form-control frm_inp', placeholder: 'B10 H4z4rd Studios' %>
+
+      <%= f.label "College Degree:", class: 'frm_txt' %>
+      <%= f.text_field :clg_degree, class: 'form-control frm_inp', placeholder: 'Doctor of Computer Science' %>
+
+      <%= f.label "College Name:", class: 'frm_txt' %>
+      <%= f.text_field :clg_name, class: 'form-control frm_inp', placeholder: 'Ashley University' %>
+
+      <%= f.label "Password:", class: 'frm_txt' %>
+      <%= f.password_field :password, class: 'form-control frm_inp' %>
+
+      <%= f.label "Confirm Password:", class: 'frm_txt' %>
+      <%= f.password_field :password_confirmation, class: 'form-control frm_inp' %>
+
+      <%= f.submit "Save Profile!", class: "btn btn-success" %>
+    <% end %>
+  </div>
+</div>

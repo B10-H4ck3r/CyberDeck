@@ -49,13 +49,13 @@
                 </a>
                 <ul class="dropdown-menu" style="background-color: darkgray;">
                   <li id="mnu_itm_drp"><%= link_to "My Profile", current_user %></li>
-                  <li id="mnu_itm_drp"><%= link_to "Edit Profile", '#' %></li>
+                  <li id="mnu_itm_drp"><%= link_to "Edit Profile", edit_user_path(current_user) %></li>
                   <li class="divider"></li>
                   <li id="mnu_itm_drp">
                     <%= link_to "Log out", logout_path, method: :delete %>
                   </li>
                   <li class="divider"></li>
-                  <li id="mnu_itm_drp"><%= link_to "Users", '#' %></li>
+                  <li id="mnu_itm_drp"><%= link_to "Users", users_path %></li>
                 </ul>
               </li>
             <% else %>

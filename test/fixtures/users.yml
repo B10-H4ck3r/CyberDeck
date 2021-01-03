@@ -11,3 +11,18 @@ aubrey:
   clg_degree: Doctor of Computer Science
   clg_name: Ashley University
   password_digest: <%= User.digest('password') %>
+  admin: true
+
+khristane:
+  fname: Khristane
+  lname: Love
+  uname: Angel
+  bio: Wife, mother, crafty
+  tel: 2544362011
+  email: khristane21@gmail.com
+  job_title: Mother
+  job_comp: Mother
+  job_bio: Stay home and tend to the kids
+  clg_degree: Nope
+  clg_name: Nope
+  password_digest: <%= User.digest('password') %>

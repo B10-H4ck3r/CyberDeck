@@ -43,7 +43,7 @@ class User < ApplicationRecord
   has_secure_password
 
   # Validate User Password #
-  validates :password, presence: true, length: { minimum: 6 }
+  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
   # Return the hash digest of the given string.
   def User.digest(string)
