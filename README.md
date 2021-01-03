@@ -17,6 +17,8 @@ _Image Found [Here](https://i.pinimg.com/originals/d3/cf/6d/d3cf6d54391b9547327b
 - [x] Create a basic Theme
 - [x] Create User Registration
 - [x] Create Login Functions
+- [x] Create Admin Ability
+- [x] Create View Users Page
 - [ ] Setup User Profile Image Upload
 - [ ] Setup User Banner Image Upload
 - [ ] Setup User Profile GUI Theme
@@ -56,7 +58,10 @@ _01/03/2021 @ 14:50_
 * Show All Users
 * Created Admin Attribute
 * Included Pagination
-* Allowed Deletion of Users 
+* Allowed Deletion of Users
+
+_01/03/2021 @ 15:05_
+* Fixed Login Issue 
 
 ## Project Resources ##
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)

@@ -8,7 +8,6 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       forwarding_url = session[:forwarding_url]
       reset_session
-      params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       log_in user
       redirect_to forwarding_url || user
     else
