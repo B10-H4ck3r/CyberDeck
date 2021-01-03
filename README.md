@@ -13,15 +13,14 @@ _Image Found [Here](https://i.pinimg.com/originals/d3/cf/6d/d3cf6d54391b9547327b
 - [x] Initiate the Project Framework
 - [x] Create Basic Landing Pages
 - [x] Integrate Bootstrap for Styling
-- [ ] Create a basic Theme
+- [x] Create a basic Theme
 - [ ] Create User Registration/Login Functions
 - [ ] Setup User Profile Image Upload
 - [ ] Setup User Banner Image Upload
 - [ ] Configure User Edit Page for new fields
 - [ ] Develop Post Controller
 - [ ] Integrate AWS for Storage
-- [ ] Host Website (Heroku [or] Digital Ocean) T.B.D.
-- [ ] Seek Investment assistance for further Development!
+- [x] Host Website Heroku
 
 ## Development Logs ##
 _01/01/2021 @ 16:20_
@@ -43,6 +42,9 @@ _01/02/2021 @ 15:40_
 * Finished All Landing Pages
 * Added Donation Options
 * Finished GUI Theme
+
+_01/03/2021 @ 12:30_
+* Created User Registration
 
 ## Project Resources ##
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)

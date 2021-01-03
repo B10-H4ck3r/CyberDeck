@@ -8,4 +8,10 @@ Rails.application.routes.draw do
   get 'connect',      to: 'static_pages#connect'
   get 'donate',       to: 'static_pages#donate'
   get 'devlogs',      to: 'static_pages#devlogs'
+
+  # Set User Directories #
+  get 'signup',       to: 'users#new'
+
+  # Set Project Resources #
+  resources :users
 end

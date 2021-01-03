@@ -10,6 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_01_03_161538) do
+
+  create_table "users", force: :cascade do |t|
+    t.string "fname"
+    t.string "lname"
+    t.string "uname"
+    t.string "tel"
+    t.string "email"
+    t.string "bio"
+    t.string "job_title"
+    t.string "job_comp"
+    t.string "job_bio"
+    t.string "clg_degree"
+    t.string "clg_name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "password_digest"
+    t.index ["email"], name: "index_users_on_email", unique: true
+  end
 
 end

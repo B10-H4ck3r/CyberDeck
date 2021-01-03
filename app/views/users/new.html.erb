@@ -1,0 +1,33 @@
+<% provide(:title, "Sign Up") %>
+<div class="center jumbotron sgn">
+  <h1 class="reg_hdr">
+    Register for a new account;
+  </h1>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= form_with(model: @user, local: true) do |f| %>
+        <%= render 'shared/error_messages' %>
+
+        <%= f.label "First Name:", class: "frm_txt" %>
+        <%= f.text_field :fname, class: "form-control frm_inp" %>
+
+        <%= f.label "Last Name:", class: "frm_txt" %>
+        <%= f.text_field :lname, class: "form-control frm_inp" %>
+
+        <%= f.label "Username:", class: "frm_txt" %>
+        <%= f.text_field :uname, class: "form-control frm_inp" %>
+
+        <%= f.label "Email:", class: "frm_txt" %>
+        <%= f.email_field :email, class: "form-control frm_inp" %>
+
+        <%= f.label "Password:", class: "frm_txt" %>
+        <%= f.password_field :password, class: "form-control frm_inp" %>
+
+        <%= f.label "Confirm Password:", class: "frm_txt" %>
+        <%= f.password_field :password_confirmation, class: "form-control frm_inp" %>
+
+        <%= f.submit "Create My Account!", class: "btn btn-success" %>
+      <% end %>
+    </div>
+  </div>
+</div>
