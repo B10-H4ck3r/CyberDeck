@@ -67,6 +67,9 @@ _01/03/2021 @ 18:30_
 * Started on Profile GUI Theme
 * Fixed Edit Profile Page
 
+_01/04/2021 @ 07:20_
+* Fixed Image Load Error on Heroku
+
 ## Project Resources ##
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)
 ![Rails](https://img.shields.io/badge/rails%20-%23CC0000.svg?&style=for-the-badge&logo=ruby-on-rails&logoColor=white)
