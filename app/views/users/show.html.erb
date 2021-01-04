@@ -1,1 +1,11 @@
-<%= @user.uname %><%= @user.email %>
+<% provide(:title, @user.uname) %>
+<div class="container">
+    <div class="fb-profile">
+        <%= image_tag('banner.jpeg', class: 'fb-image-lg', alt: 'Profile Banner Image') %>
+        <%= image_tag('anon_logo.jpeg', class: 'fb-image-profile thumbnail', alt: 'Profile Image') %>
+        <div class="fb-profile-text">
+            <h1><%= @user.uname %></h1>
+            <p><%= @user.bio %></p>
+        </div>
+    </div>
+</div>
