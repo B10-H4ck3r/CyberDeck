@@ -1,6 +1,16 @@
 class User < ApplicationRecord
 
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships,  class_name:  "Relationship",
+                                   foreign_key: "follower_id",
+                                   dependent:   :destroy
+  has_many :passive_relationships, class_name:  "Relationship",
+                                   foreign_key: "followed_id",
+                                   dependent:   :destroy
+  has_many :following, through: :active_relationships,  source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
+
+
 
   # Validate Before Saving Functions #
   before_save { email.downcase! }
@@ -15,25 +25,25 @@ class User < ApplicationRecord
   validates :uname, presence: true, length: { maximum: 50 }
 
   # Validate User Telephone #
-  validates :tel, presence: true, length: { maximum: 14 }, allow_nil: true
+  validates :tel, presence: true, length: { maximum: 14 }, allow_blank: true
 
   # Validate User Biography #
-  validates :bio, presence: true, length: { maximum: 255 }, allow_nil: true
+  validates :bio, presence: true, length: { maximum: 255 }, allow_blank: true
 
   # Validate User Job Title #
-  validates :job_title, presence: true, length: { maximum: 255 }, allow_nil: true
+  validates :job_title, presence: true, length: { maximum: 255 }, allow_blank: true
 
   # Validate User Job Company #
-  validates :job_comp, presence: true, length: { maximum: 155 }, allow_nil: true
+  validates :job_comp, presence: true, length: { maximum: 155 }, allow_blank: true
 
   # Validate User Job Description #
-  validates :job_bio, presence: true, length: { maximum: 255 }, allow_nil: true
+  validates :job_bio, presence: true, length: { maximum: 255 }, allow_blank: true
 
   # Validate User College Degree #
-  validates :clg_degree, presence: true, length: { maximum: 255 }, allow_nil: true
+  validates :clg_degree, presence: true, length: { maximum: 255 }, allow_blank: true
 
   # Validate User College Name #
-  validates :clg_name, presence: true, length: { maximum: 255 }, allow_nil: true
+  validates :clg_name, presence: true, length: { maximum: 255 }, allow_blank: true
 
   # Validate Email REGEX #
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
@@ -56,7 +66,25 @@ class User < ApplicationRecord
 
   # See "Following users" for the full implementation.
   def feed
-    Micropost.where("user_id = ?", id)
+    following_ids = "SELECT followed_id FROM relationships
+                     WHERE  follower_id = :user_id"
+    Micropost.where("user_id IN (#{following_ids})
+                     OR user_id = :user_id", user_id: id)
+  end
+
+  # Follows a user.
+  def follow(other_user)
+    following << other_user unless self == other_user
+  end
+
+  # Unfollows a user.
+  def unfollow(other_user)
+    following.delete(other_user)
+  end
+
+  # Returns true if the current user is following the other user.
+  def following?(other_user)
+    following.include?(other_user)
   end
 
 end

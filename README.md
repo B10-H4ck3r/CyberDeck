@@ -22,6 +22,7 @@ _Image Found [Here](https://i.pinimg.com/originals/d3/cf/6d/d3cf6d54391b9547327b
 - [x] Setup Post Creation
 - [x] Setup Embed Picture in Post
 - [x] Link to AWS Buckets for storing images
+- [x] Setup User Following Functions
 - [ ] Setup User Profile Image Upload
 - [ ] Setup User Banner Image Upload
 - [ ] Design GUI Theme for User Profile
@@ -80,6 +81,9 @@ _01/04/2021 @ 18:10_
 
 _01/04/2021 @ 19:20_
 * Start working on User Profile Theme
+
+_01/05/2021 @ 08:50_
+* Setup User Follow Attributes
 
 ## Project Resources ##
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)

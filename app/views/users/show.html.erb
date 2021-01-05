@@ -6,6 +6,10 @@
         <div class="fb-profile-text">
           <div class="row">
             <aside class="col-md-4">
+              <section class="stats">
+                <%= render 'shared/stats' %>
+              </section>
+              <%= render 'follow_form' if logged_in? %>              
               <% if @user == current_user %>
               <section class="micropost_form">
                 <%= render 'shared/micropost_form' %>
