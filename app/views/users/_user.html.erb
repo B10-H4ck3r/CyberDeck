@@ -1,5 +1,10 @@
 <li>
-  <%= link_to user.uname, user %>
+  <% if user.avatar.attached? %>
+    <%= image_tag user.avatar, style: 'width: 95px; height: 95px; border-radius: 75%', alt: user.uname %>
+  <% else %>
+    <%= image_tag('anon_logo.jpeg', style: 'width: 95px; height: 95px; border-radius: 75%', alt: 'Profile Image') %>
+  <% end %>
+  <%= link_to user.uname, user, class: 'show_user_uname' %>
   <% if current_user.admin? && !current_user?(user) %>
     | <%= link_to "delete", user, method: :delete,
                                   data: { confirm: "You sure?" } %>

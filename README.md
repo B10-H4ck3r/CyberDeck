@@ -25,10 +25,10 @@ _Image Found [Here](https://i.pinimg.com/originals/d3/cf/6d/d3cf6d54391b9547327b
 - [x] Setup User Following Functions
 - [x] Setup User Profile Image Upload
 - [x] Setup User Banner Image Upload
-- [ ] Design GUI Theme for User Profile
-- [ ] Configure User Edit Page for new fields
-- [ ] Develop Post Controller
-- [ ] Integrate AWS for Storage
+- [x] Design GUI Theme for User Profile
+- [x] Configure User Edit Page for new fields
+- [x] Develop Post Controller
+- [x] Integrate AWS for Storage
 
 ## Development Logs ##
 _01/01/2021 @ 16:20_
@@ -88,6 +88,10 @@ _01/05/2021 @ 08:50_
 _01/05/2021 @ 12:20_
 * Added Avatar Uploads
 * Added Banner Uploads
+
+_01/05/2021 @ 14:00_
+* Added a few GUI Designs
+* Updated View Users Page
 
 ## Project Resources ##
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)
