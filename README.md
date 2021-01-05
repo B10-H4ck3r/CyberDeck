@@ -19,9 +19,12 @@ _Image Found [Here](https://i.pinimg.com/originals/d3/cf/6d/d3cf6d54391b9547327b
 - [x] Create Login Functions
 - [x] Create Admin Ability
 - [x] Create View All Users Page
-- [ ] Setup User Profile GUI Theme
+- [x] Setup Post Creation
+- [x] Setup Embed Picture in Post
+- [x] Link to AWS Buckets for storing images
 - [ ] Setup User Profile Image Upload
 - [ ] Setup User Banner Image Upload
+- [ ] Design GUI Theme for User Profile
 - [ ] Configure User Edit Page for new fields
 - [ ] Develop Post Controller
 - [ ] Integrate AWS for Storage
@@ -69,6 +72,11 @@ _01/03/2021 @ 18:30_
 
 _01/04/2021 @ 07:20_
 * Fixed Image Load Error on Heroku
+
+_01/04/2021 @ 18:10_
+* Included Post Creation
+* Setup Feed Structure
+* Integrated AWS for Active Storage
 
 ## Project Resources ##
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)

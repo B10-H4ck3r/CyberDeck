@@ -1,5 +1,7 @@
 class User < ApplicationRecord
 
+  has_many :microposts, dependent: :destroy
+
   # Validate Before Saving Functions #
   before_save { email.downcase! }
 
@@ -50,6 +52,11 @@ class User < ApplicationRecord
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
+  end
+
+  # See "Following users" for the full implementation.
+  def feed
+    Micropost.where("user_id = ?", id)
   end
 
 end
