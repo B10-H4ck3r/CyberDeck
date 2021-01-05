@@ -8,6 +8,12 @@
     <%= form_with(model: @user, local: true) do |f| %>
       <%= render 'shared/error_messages' %>
 
+      <%= f.label "Your Avatar:", class: 'frm_txt' %>
+      <%= f.file_field :avatar, class: 'form-control frm_inp' %>
+
+      <%= f.label "Your Banner:", class: 'frm_txt' %>
+      <%= f.file_field :banner, class: 'form-control frm_inp' %>
+
       <%= f.label "First Name:", class: 'frm_txt' %>
       <%= f.text_field :fname, class: 'form-control frm_inp', placeholder: 'Bio' %>
 

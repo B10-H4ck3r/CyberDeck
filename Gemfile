@@ -18,6 +18,9 @@ gem 'active_storage_validations', '0.8.9'
 gem 'image_processing',           '1.9.3'
 gem 'mini_magick',                '4.9.5'
 gem 'aws-sdk-s3', '1.87.0', require: false
+gem 'carrierwave'
+gem 'fog'
+gem 'figaro'
 
 group :development, :test do
   gem 'sqlite3', '1.4.2'

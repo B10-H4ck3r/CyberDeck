@@ -1,7 +1,7 @@
 <%= form_with(model: @micropost, local: true) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+    <%= f.text_area :content, placeholder: "Compose new micropost...", class: 'pst_frm_inp' %>
   </div>
   <span class="image">
     <%= f.file_field :image %>

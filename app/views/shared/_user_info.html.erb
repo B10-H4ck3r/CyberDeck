@@ -1,6 +1,8 @@
 <h1 class="usr_intel">
   <%= @user.uname %></h1><br/>
+  <span><p class="usr_abt_txt">I have: <%= pluralize(current_user.microposts.count, "Posts ") %></p></span>
   <p class="usr_abt_hdr">About Me:</p>
   <span><p class="usr_abt_txt"><%= @user.bio %></p></span>
   <p class="usr_abt_hdr">My Job Intel: </p><span><p class="usr_abt_txt">*<%= @user.job_title %><br/>*<%= @user.job_comp %><br/>*<%= @user.job_bio %></p></span>
-<span><p class="usr_abt_txt">I have: <%= pluralize(current_user.microposts.count, "Posts ") %></p></span>
+  <p class="usr_abt_hdr">My Education:</p>
+  <span><p class="usr_abt_txt"><%= @user.clg_name %><br/><%= @user.clg_degree %></p></span>
