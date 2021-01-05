@@ -1,3 +1,6 @@
-<h1><%= current_user.uname %></h1>
-<span><%= link_to "view my profile", current_user %></span>
-<span><%= pluralize(current_user.microposts.count, "micropost") %></span>
+<h1 class="usr_intel">
+  <%= current_user.uname %></h1><br/>
+  <p class="usr_abt_hdr">About Me:</p>
+  <span><p class="usr_abt_txt"><%= @user.bio %></p></span>
+  <p class="usr_abt_hdr">My Job Intel: </p><span><p class="usr_abt_txt">*<%= @user.job_title %><br/>*<%= @user.job_comp %><br/>*<%= @user.job_bio %></p></span>
+<span><p class="usr_abt_txt">I have: <%= pluralize(current_user.microposts.count, "Posts ") %></p></span>
