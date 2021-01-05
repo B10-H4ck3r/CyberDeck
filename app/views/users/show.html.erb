@@ -1,13 +1,13 @@
 <% provide(:title, @user.uname) %>
 <div class="container">
     <div class="fb-profile">
-        <% if current_user.banner.attached? %>
-          <%= image_tag current_user.banner, class: 'fb-image-lg', alt: 'User Profile Banner' %>
+        <% if @user.banner.attached? %>
+          <%= image_tag @user.banner, class: 'fb-image-lg', alt: 'User Profile Banner' %>
         <% else %>
           <%= image_tag('banner.jpeg', class: 'fb-image-lg', alt: 'Profile Banner Image') %>
         <% end %>
-        <% if current_user.avatar.attached? %>
-          <%= image_tag current_user.avatar, class: 'fb-image-profile thumbnail', alt: 'User Profile Image' %>
+        <% if @user.avatar.attached? %>
+          <%= image_tag @user.avatar, class: 'fb-image-profile thumbnail', alt: 'User Profile Image' %>
         <% else %>
           <%= image_tag('anon_logo.jpeg', class: 'fb-image-profile thumbnail', alt: 'Profile Image') %>
         <% end %>
